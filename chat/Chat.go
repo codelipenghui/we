@@ -7,5 +7,6 @@ import (
 
 func main() {
 	beego.Router("/", &controllers.WelcomeController{})
+	beego.Router("/join", &controllers.JoinController{}, "post:Join")
 	beego.Run()
 }

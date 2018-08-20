@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" http-equiv="Content-Type" content="width=device-width, initial-scale=1, text/html; charset=UTF-8" />
     <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
     <title>我们</title>
 </head>
@@ -9,8 +9,16 @@
 <div class="container">
     <div>
         <h3>我们</h3>
-        <div>无悔、因青春有爱</div>
+        <p class="lead"><small>无悔、因青春有爱</small></p>
     </div>
+</div>
+<div class="container">
+    <form class="form-inline" action="/join" method="post">
+        <div class="form-group">
+            <input type="text" name="username" class="form-control" id="username" placeholder="">
+        </div>
+        <button type="submit" class="btn btn-default">进入</button>
+    </form>
 </div>
 </body>
 </html>
